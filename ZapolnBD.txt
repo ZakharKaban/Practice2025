@@ -1,0 +1,73 @@
+USE BuildingMaterialsStore;
+GO
+
+/* =========================================
+   РОЛИ
+========================================= */
+
+INSERT INTO roles (role_name)
+VALUES ('admin'), ('manager'), ('customer');
+
+/* =========================================
+   ПОЛЬЗОВАТЕЛИ
+========================================= */
+
+INSERT INTO users (email, password_hash, role_id)
+VALUES
+('admin@store.ru',    'hash_admin',    1),
+('manager@store.ru',  'hash_manager',  2),
+('user1@mail.ru',     'hash_user1',    3),
+('user2@mail.ru',     'hash_user2',    3);
+
+/* =========================================
+   КАТЕГОРИИ
+========================================= */
+
+INSERT INTO product_categories (category_name)
+VALUES
+('Цемент'),
+('Кирпич'),
+('Отделочные материалы');
+
+/* =========================================
+   ТОВАРЫ
+========================================= */
+
+INSERT INTO products
+(category_id, product_name, description, price, quantity_in_stock, unit)
+VALUES
+(1, 'Цемент М500', 'Мешок 50 кг', 420.00, 150, 'мешок'),
+(1, 'Цемент М400', 'Мешок 50 кг', 380.00, 200, 'мешок'),
+(2, 'Кирпич красный', 'Одинарный', 18.50, 5000, 'шт'),
+(2, 'Кирпич силикатный', 'Белый', 16.00, 3000, 'шт'),
+(3, 'Плитка керамическая', 'Настенная', 950.00, 120, 'м2');
+
+/* =========================================
+   КОРЗИНА ПОЛЬЗОВАТЕЛЯ
+========================================= */
+
+-- user1
+INSERT INTO cart_items (user_id, product_id, quantity)
+VALUES
+(3, 1, 5),
+(3, 3, 100);
+
+-- user2
+INSERT INTO cart_items (user_id, product_id, quantity)
+VALUES
+(4, 2, 3),
+(4, 5, 10);
+
+/* =========================================
+   ЗАКАЗ (пример оформленного заказа)
+========================================= */
+
+INSERT INTO orders (user_id, status)
+VALUES (3, 'paid');
+
+DECLARE @order_id INT = SCOPE_IDENTITY();
+
+INSERT INTO order_items (order_id, product_id, quantity, price)
+VALUES
+(@order_id, 1, 5, 420.00),
+(@order_id, 3, 100, 18.50);
