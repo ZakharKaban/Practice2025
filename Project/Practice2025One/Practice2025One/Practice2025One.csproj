@@ -235,8 +235,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Sourses\Sprites\" />
+    <Resource Include="Sourses\Sprites\nail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="nail.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

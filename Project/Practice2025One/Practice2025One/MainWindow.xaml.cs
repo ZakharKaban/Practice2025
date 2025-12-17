@@ -9,8 +9,19 @@ using Practice2025One.Pages;
 
 namespace Practice2025One
 {
+
+
     public partial class MainWindow : Window
     {
+       
+
+        // Инициализация при загрузке
+        protected override void OnContentRendered(EventArgs e)
+        {
+            base.OnContentRendered(e);
+           
+        }
+
         public MainWindow()
         {
             InitializeComponent();

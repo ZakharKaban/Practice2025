@@ -9,6 +9,9 @@ namespace Practice2025One.Pages
 {
     public partial class OrdersManagementPage : Page
     {
+        private bool _isLoadingOrders = false;
+        private bool _isSettingStatus = false;
+        
         public OrdersManagementPage()
         {
             InitializeComponent();
@@ -44,6 +47,7 @@ namespace Practice2025One.Pages
         {
             try
             {
+                _isLoadingOrders = true;
                 var orders = AppConnect.Model1.Orders
                     .OrderByDescending(o => o.OrderDate)
                     .ToList();
@@ -67,9 +71,11 @@ namespace Practice2025One.Pages
                 }).ToList();
                 
                 OrdersListView.ItemsSource = orderViewModels;
+                _isLoadingOrders = false;
             }
             catch (Exception ex)
             {
+                _isLoadingOrders = false;
                 MessageBox.Show($"Ошибка загрузки заказов: {ex.Message}", 
                               "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
@@ -96,6 +102,7 @@ namespace Practice2025One.Pages
             if (order != null)
             {
                 // Устанавливаем текущий статус
+                _isSettingStatus = true;
                 foreach (ComboBoxItem item in comboBox.Items)
                 {
                     if (item.Content.ToString() == order.Status)
@@ -104,6 +111,7 @@ namespace Practice2025One.Pages
                         break;
                     }
                 }
+                _isSettingStatus = false;
             }
         }
         
@@ -111,6 +119,8 @@ namespace Practice2025One.Pages
         {
             try
             {
+                if (_isLoadingOrders || _isSettingStatus) return;
+                
                 ComboBox comboBox = sender as ComboBox;
                 if (comboBox == null || comboBox.Tag == null) return;
                 
