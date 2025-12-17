@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|C:\\Users\\Sasha\\source\\repos\\BarberShop\\barbershop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|c:\\users\\sasha\\source\\repos\\barbershop\\barbershop\\servicescatalogpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\servicescatalogpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|C:\\Users\\Sasha\\source\\repos\\BarberShop\\barbershop\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|C:\\Users\\Sasha\\source\\repos\\BarberShop\\barbershop\\model1.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\model1.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|C:\\Users\\Sasha\\source\\repos\\BarberShop\\barbershop\\sp_helpdiagrams_result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\sp_helpdiagrams_result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|C:\\Users\\Sasha\\source\\repos\\BarberShop\\barbershop\\sp_helpdiagramdefinition_result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\sp_helpdiagramdefinition_result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|C:\\Users\\Sasha\\source\\repos\\BarberShop\\barbershop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Model1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\Model1.Designer.cs",
+              "RelativeDocumentMoniker": "BarberShop\\Model1.Designer.cs",
+              "ToolTip": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\Model1.Designer.cs",
+              "RelativeToolTip": "BarberShop\\Model1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVDhPY0AHeq0n/p\u002B4/fo/lEs6AGmWrzkKNqSrq\u002Bu/goLC/9raWpwGMoIUP/zwC8pFAHkBNoaHLdaMIAP8/f0ZGBkZGSZMmMAIlcYNkF0A4oMMANH5\u002Bfn/CwoKCHsNPQxABrx48YI4Q0B\u002BhjLhABYOyBgqhQnwSkIBuhomKE02GDWA2gbw8PAw3Lp1C2dUguSkpKSgPAhASdtLliz5P23aNIZnz55BRVAByIKKigqGmJgYwnmCOMDAAAAA/l8uuZJFNgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-12-17T12:43:36.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model1.edmx.diagram",
+              "DocumentMoniker": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\Model1.edmx.diagram",
+              "RelativeDocumentMoniker": "BarberShop\\Model1.edmx.diagram",
+              "ToolTip": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\Model1.edmx.diagram",
+              "RelativeToolTip": "BarberShop\\Model1.edmx.diagram",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVDhPY0AHeq0n/p\u002B4/fo/lEs6AGmWrzkKNqSrq\u002Bu/goLC/9raWpwGMoIUP/zwC8pFAHkBNoaHLdaMIAP8/f0ZGBkZGSZMmMAIlcYNkF0A4oMMANH5\u002Bfn/CwoKCHsNPQxABrx48YI4Q0B\u002BhjLhABYOyBgqhQnwSkIBuhomKE02GDWA2gbw8PAw3Lp1C2dUguSkpKSgPAhASdtLliz5P23aNIZnz55BRVAByIKKigqGmJgYwnmCOMDAAAAA/l8uuZJFNgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-12-17T12:43:36.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "sp_helpdiagrams_Result.cs",
+              "DocumentMoniker": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\sp_helpdiagrams_Result.cs",
+              "RelativeDocumentMoniker": "BarberShop\\sp_helpdiagrams_Result.cs",
+              "ToolTip": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\sp_helpdiagrams_Result.cs",
+              "RelativeToolTip": "BarberShop\\sp_helpdiagrams_Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVDhPY0AHeq0n/p\u002B4/fo/lEs6AGmWrzkKNqSrq\u002Bu/goLC/9raWpwGMoIUP/zwC8pFAHkBNoaHLdaMIAP8/f0ZGBkZGSZMmMAIlcYNkF0A4oMMANH5\u002Bfn/CwoKCHsNPQxABrx48YI4Q0B\u002BhjLhABYOyBgqhQnwSkIBuhomKE02GDWA2gbw8PAw3Lp1C2dUguSkpKSgPAhASdtLliz5P23aNIZnz55BRVAByIKKigqGmJgYwnmCOMDAAAAA/l8uuZJFNgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-12-17T12:43:36.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sp_helpdiagramdefinition_Result.cs",
+              "DocumentMoniker": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\sp_helpdiagramdefinition_Result.cs",
+              "RelativeDocumentMoniker": "BarberShop\\sp_helpdiagramdefinition_Result.cs",
+              "ToolTip": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\sp_helpdiagramdefinition_Result.cs",
+              "RelativeToolTip": "BarberShop\\sp_helpdiagramdefinition_Result.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC8SURBVDhPY0AHeq0n/p\u002B4/fo/lEs6AGmWrzkKNqSrq\u002Bu/goLC/9raWpwGMoIUP/zwC8pFAHkBNoaHLdaMIAP8/f0ZGBkZGSZMmMAIlcYNkF0A4oMMANH5\u002Bfn/CwoKCHsNPQxABrx48YI4Q0B\u002BhjLhABYOyBgqhQnwSkIBuhomKE02GDWA2gbw8PAw3Lp1C2dUguSkpKSgPAhASdtLliz5P23aNIZnz55BRVAByIKKigqGmJgYwnmCOMDAAAAA/l8uuZJFNgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-12-17T12:43:36.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "BarberShop\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\MainWindow.xaml.cs",
+              "RelativeToolTip": "BarberShop\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:28:20.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicesCatalogPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\ServicesCatalogPage.xaml.cs",
+              "RelativeDocumentMoniker": "BarberShop\\ServicesCatalogPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\ServicesCatalogPage.xaml.cs",
+              "RelativeToolTip": "BarberShop\\ServicesCatalogPage.xaml.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAjwNcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T12:45:48.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "BarberShop\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Sasha\\source\\repos\\BarberShop\\BarberShop\\MainWindow.xaml",
+              "RelativeToolTip": "BarberShop\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-16T18:34:45.675Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\BloomForAll\\Practice2025\\BarberShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|d:\\projects\\bloomforall\\practice2025\\barbershop\\barbershop\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{6D19B185-F093-41D6-ADAB-B2F3B2698CBE}|BarberShop\\BarberShop.csproj|solutionrelative:barbershop\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\BarberShop\\BarberShop\\Model1.edmx",
+              "RelativeDocumentMoniker": "BarberShop\\Model1.edmx",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\BarberShop\\BarberShop\\Model1.edmx [Diagram1]*",
+              "RelativeToolTip": "BarberShop\\Model1.edmx [Diagram1]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-12-17T14:07:43.496Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

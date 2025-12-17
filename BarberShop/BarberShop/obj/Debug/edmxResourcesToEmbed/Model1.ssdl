@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище BModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Appointments">
+    <Key>
+      <PropertyRef Name="AppointmentID" />
+    </Key>
+    <Property Name="AppointmentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClientID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="ServiceID" Type="int" Nullable="false" />
+    <Property Name="AppointmentDateTime" Type="datetime" Nullable="false" />
+    <Property Name="EndDateTime" Type="datetime" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreatedAt" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Name="CartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="ServiceID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="DesiredDateTime" Type="datetime" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="AddedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Specialization" Type="nvarchar" MaxLength="100" />
+    <Property Name="HireDate" Type="date" Nullable="false" />
+    <Property Name="Salary" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="WorkSchedule" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsAvailable" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmplSpecializ">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="ServiceID" Type="int" Nullable="false" />
+    <Property Name="cxcdc" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ProductType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Brand" Type="nvarchar" MaxLength="100" />
+    <Property Name="QuantityInStock" Type="int" />
+    <Property Name="ReorderLevel" Type="int" />
+    <Property Name="UnitPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="LastRestocked" Type="date" />
+  </EntityType>
+  <EntityType Name="Promotions">
+    <Key>
+      <PropertyRef Name="PromotionID" />
+    </Key>
+    <Property Name="PromotionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PromotionName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="DiscountPercent" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PurchaseHistory">
+    <Key>
+      <PropertyRef Name="PurchaseID" />
+    </Key>
+    <Property Name="PurchaseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="ServiceID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="AppointmentDateTime" Type="datetime" />
+    <Property Name="ActualPrice" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PurchaseDate" Type="datetime" />
+    <Property Name="PaymentMethod" Type="nvarchar" MaxLength="50" />
+    <Property Name="PaymentStatus" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Reviews">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Name="ReviewID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AppointmentID" Type="int" Nullable="false" />
+    <Property Name="Rating" Type="int" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ReviewDate" Type="datetime" />
+    <Property Name="IsPublished" Type="bit" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ServiceName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ServiceTypeID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ServiceTypes">
+    <Key>
+      <PropertyRef Name="ServiceTypeID" />
+    </Key>
+    <Property Name="ServiceTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="UserRoles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="PasswordHash" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="RegistrationDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <Association Name="FK__Appointme__Clien__66603565">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Appointments" Type="Self.Appointments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Appointments">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Emplo__6754599E">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Appointments" Type="Self.Appointments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Appointments">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Servi__68487DD7">
+    <End Role="Services" Type="Self.Services" Multiplicity="1" />
+    <End Role="Appointments" Type="Self.Appointments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="Appointments">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cart__EmployeeID__6EF57B66">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="0..1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cart__ServiceID__6E01572D">
+    <End Role="Services" Type="Self.Services" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cart__UserID__6D0D32F4">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmployeeS__Emplo__60A75C0F">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="EmplSpecializ" Type="Self.EmplSpecializ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="EmplSpecializ">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmployeeS__Servi__619B8048">
+    <End Role="Services" Type="Self.Services" Multiplicity="1" />
+    <End Role="EmplSpecializ" Type="Self.EmplSpecializ" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="EmplSpecializ">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employees__UserI__571DF1D5">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PurchaseH__Emplo__7B5B524B">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="0..1" />
+    <End Role="PurchaseHistory" Type="Self.PurchaseHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="PurchaseHistory">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PurchaseH__Servi__7A672E12">
+    <End Role="Services" Type="Self.Services" Multiplicity="1" />
+    <End Role="PurchaseHistory" Type="Self.PurchaseHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="PurchaseHistory">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PurchaseH__UserI__797309D9">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="PurchaseHistory" Type="Self.PurchaseHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="PurchaseHistory">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reviews__Appoint__74AE54BC">
+    <End Role="Appointments" Type="Self.Appointments" Multiplicity="1" />
+    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appointments">
+        <PropertyRef Name="AppointmentID" />
+      </Principal>
+      <Dependent Role="Reviews">
+        <PropertyRef Name="AppointmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Services__Servic__5DCAEF64">
+    <End Role="ServiceTypes" Type="Self.ServiceTypes" Multiplicity="1" />
+    <End Role="Services" Type="Self.Services" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceTypes">
+        <PropertyRef Name="ServiceTypeID" />
+      </Principal>
+      <Dependent Role="Services">
+        <PropertyRef Name="ServiceTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__RoleID__52593CB8">
+    <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRoles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище BModelContainer">
+    <EntitySet Name="Appointments" EntityType="Self.Appointments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmplSpecializ" EntityType="Self.EmplSpecializ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Promotions" EntityType="Self.Promotions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseHistory" EntityType="Self.PurchaseHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reviews" EntityType="Self.Reviews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ServiceTypes" EntityType="Self.ServiceTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Appointme__Clien__66603565" Association="Self.FK__Appointme__Clien__66603565">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Appointments" EntitySet="Appointments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Emplo__6754599E" Association="Self.FK__Appointme__Emplo__6754599E">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Appointments" EntitySet="Appointments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Servi__68487DD7" Association="Self.FK__Appointme__Servi__68487DD7">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Appointments" EntitySet="Appointments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cart__EmployeeID__6EF57B66" Association="Self.FK__Cart__EmployeeID__6EF57B66">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cart__ServiceID__6E01572D" Association="Self.FK__Cart__ServiceID__6E01572D">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cart__UserID__6D0D32F4" Association="Self.FK__Cart__UserID__6D0D32F4">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmployeeS__Emplo__60A75C0F" Association="Self.FK__EmployeeS__Emplo__60A75C0F">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="EmplSpecializ" EntitySet="EmplSpecializ" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmployeeS__Servi__619B8048" Association="Self.FK__EmployeeS__Servi__619B8048">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="EmplSpecializ" EntitySet="EmplSpecializ" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employees__UserI__571DF1D5" Association="Self.FK__Employees__UserI__571DF1D5">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PurchaseH__Emplo__7B5B524B" Association="Self.FK__PurchaseH__Emplo__7B5B524B">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="PurchaseHistory" EntitySet="PurchaseHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PurchaseH__Servi__7A672E12" Association="Self.FK__PurchaseH__Servi__7A672E12">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="PurchaseHistory" EntitySet="PurchaseHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PurchaseH__UserI__797309D9" Association="Self.FK__PurchaseH__UserI__797309D9">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="PurchaseHistory" EntitySet="PurchaseHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reviews__Appoint__74AE54BC" Association="Self.FK__Reviews__Appoint__74AE54BC">
+      <End Role="Appointments" EntitySet="Appointments" />
+      <End Role="Reviews" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Services__Servic__5DCAEF64" Association="Self.FK__Services__Servic__5DCAEF64">
+      <End Role="ServiceTypes" EntitySet="ServiceTypes" />
+      <End Role="Services" EntitySet="Services" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__RoleID__52593CB8" Association="Self.FK__Users__RoleID__52593CB8">
+      <End Role="UserRoles" EntitySet="UserRoles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
