@@ -19,7 +19,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("Model1", "FK_Users_Roles", "Roles", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(Practice2025One.AppData.Roles), "Users", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(Practice2025One.AppData.Users))]
 
 // Исходное имя файла:
-// Дата создания: 17.12.2025 18:44:04
+// Дата создания: 17.12.2025 19:26:51
 namespace Practice2025One.AppData
 {
     

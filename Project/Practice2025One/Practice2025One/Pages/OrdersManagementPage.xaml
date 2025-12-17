@@ -1,0 +1,77 @@
+<Page x:Class="Practice2025One.Pages.OrdersManagementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Управление заказами"
+      Loaded="Page_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Панель фильтров -->
+        <Border Grid.Row="0" Background="White" Padding="15" BorderBrush="#E0E0E0" BorderThickness="0,0,0,1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Статус:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <ComboBox x:Name="StatusFilterComboBox" 
+                         Width="200" Padding="10"
+                         SelectionChanged="FilterChanged"/>
+                <Button Content="Сбросить фильтр" 
+                       Click="ResetFilterButton_Click"
+                       Padding="10,5" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+        
+        <ListView x:Name="OrdersListView" 
+                 Grid.Row="1"
+                 SelectionMode="Single"
+                 MouseDoubleClick="OrdersListView_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Номер заказа" Width="200" DisplayMemberBinding="{Binding OrderNumber}"/>
+                    <GridViewColumn Header="Пользователь" Width="200" DisplayMemberBinding="{Binding UserName}"/>
+                    <GridViewColumn Header="Дата заказа" Width="150" DisplayMemberBinding="{Binding OrderDate}"/>
+                    <GridViewColumn Header="Адрес доставки" Width="300" DisplayMemberBinding="{Binding DeliveryAddress}"/>
+                    <GridViewColumn Header="Статус" Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox SelectionChanged="StatusComboBox_SelectionChanged"
+                                         Tag="{Binding OrderID}"
+                                         Loaded="StatusComboBox_Loaded">
+                                    <ComboBoxItem Content="Новый"/>
+                                    <ComboBoxItem Content="В обработке"/>
+                                    <ComboBoxItem Content="Доставляется"/>
+                                    <ComboBoxItem Content="Выполнен"/>
+                                    <ComboBoxItem Content="Отменен"/>
+                                </ComboBox>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Сумма" Width="120">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding TotalPrice}" HorizontalAlignment="Right" FontWeight="Bold"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Действие" Width="120">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Детали" 
+                                       Click="ViewDetailsButton_Click"
+                                       Tag="{Binding OrderID}"
+                                       Padding="10,5"
+                                       Background="#2196F3"
+                                       Foreground="White"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\App.xaml
-1219584333
+17-1311052305
 
-81278157098
-13705849391
-MainWindow.xaml;
+29-805119665
+18-1930355205
+MainWindow.xaml;Pages\CatalogPage.xaml;Pages\CartPage.xaml;Pages\LoginPage.xaml;Pages\OrderDetailsPage.xaml;Pages\OrderHistoryPage.xaml;Pages\OrderPage.xaml;Pages\OrdersManagementPage.xaml;Pages\ProductsManagementPage.xaml;Pages\ProfilePage.xaml;Pages\RegisterPage.xaml;Pages\SuppliersManagementPage.xaml;Pages\UsersManagementPage.xaml;Windows\ChangeRoleWindow.xaml;Windows\ProductEditWindow.xaml;Windows\SupplierEditWindow.xaml;Windows\UserEditWindow.xaml;
 
-True
+False
 

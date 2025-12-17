@@ -7,6 +7,11 @@ namespace Practice2025One.AppData
 {
     internal class AppConnect
     {
-       // public static Entities2 Model1;
+        public static Entities1 Model1;
+        
+        static AppConnect()
+        {
+            Model1 = new Entities1();
+        }
     }
 }

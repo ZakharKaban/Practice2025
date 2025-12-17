@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Controls;
 
 namespace Practice2025One.AppData
 {
     internal class AppFrame
     {
+        public static Frame MainFrame;
     }
 }

@@ -5,8 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practice2025One"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="OptStroy Sistem" Height="700" Width="1200"
+        WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         
+        <!-- Верхняя панель -->
+        <Border Grid.Row="0" Background="#2196F3" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Column="0" Text="OptStroy Sistem" 
+                          FontSize="20" FontWeight="Bold" 
+                          Foreground="White" VerticalAlignment="Center"/>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <TextBlock x:Name="UserInfoText" Text="Гость" 
+                              Foreground="White" VerticalAlignment="Center" 
+                              Margin="0,0,15,0"/>
+                    <Button x:Name="LogoutButton" Content="Выход" 
+                           Click="LogoutButton_Click" 
+                           Visibility="Collapsed"
+                           Padding="10,5"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Основной контент -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Меню навигации -->
+            <Border Grid.Column="0" BorderBrush="LightGray" BorderThickness="0,0,1,0">
+                <ListBox x:Name="NavigationMenu" 
+                        SelectionChanged="NavigationMenu_SelectionChanged"
+                        Background="White">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Padding" Value="15,10"/>
+                            <Setter Property="FontSize" Value="14"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+            </Border>
+            
+            <!-- Frame для страниц -->
+            <Frame x:Name="MainFrame" Grid.Column="1" 
+                  NavigationUIVisibility="Hidden"
+                  Loaded="MainFrame_Loaded"/>
+        </Grid>
     </Grid>
 </Window>
