@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practice2025One"
         mc:Ignorable="d"
-        Title="OptStroy Sistem" Height="700" Width="1200"
+        Title="OptStroy Sistem" Height="700" Width="1458"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
