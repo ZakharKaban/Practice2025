@@ -1,73 +1,70 @@
-USE BuildingMaterialsStore;
+USE OptStroySistem;
 GO
 
 /* =========================================
    РОЛИ
 ========================================= */
-
-INSERT INTO roles (role_name)
-VALUES ('admin'), ('manager'), ('customer');
+INSERT INTO Roles (RoleName)
+VALUES 
+('Гость'),
+('Пользователь'),
+('Менеджер'),
+('Администратор');
 
 /* =========================================
    ПОЛЬЗОВАТЕЛИ
 ========================================= */
-
-INSERT INTO users (email, password_hash, role_id)
+INSERT INTO Users (FullName, Email, Phone, PasswordHash, RoleID, CreatedAt)
 VALUES
-('admin@store.ru',    'hash_admin',    1),
-('manager@store.ru',  'hash_manager',  2),
-('user1@mail.ru',     'hash_user1',    3),
-('user2@mail.ru',     'hash_user2',    3);
+('Иванов Иван Иванович', 'ivanov@mail.ru', '79001112233', 'HASH123', 2, '2025-01-01'),
+('Петров Петр Петрович', 'petrov@mail.ru', '79002223344', 'HASH456', 3, '2025-01-02'),
+('Администратор Системы', 'admin@mail.ru', '79003334455', 'ADMINHASH', 4, '2025-01-01');
 
 /* =========================================
-   КАТЕГОРИИ
+   ПОСТАВЩИКИ
 ========================================= */
-
-INSERT INTO product_categories (category_name)
+INSERT INTO Suppliers (Name, ContactInfo)
 VALUES
-('Цемент'),
-('Кирпич'),
-('Отделочные материалы');
+('ООО СтройМатериалы', 'info@stroymat.ru'),
+('ЗАО ОптСнаб', 'contact@optsnab.ru');
 
 /* =========================================
    ТОВАРЫ
 ========================================= */
-
-INSERT INTO products
-(category_id, product_name, description, price, quantity_in_stock, unit)
+INSERT INTO Products 
+(Name, Description, Price, OldPrice, DiscountPercent, Characteristics, SupplierID, ImagePath)
 VALUES
-(1, 'Цемент М500', 'Мешок 50 кг', 420.00, 150, 'мешок'),
-(1, 'Цемент М400', 'Мешок 50 кг', 380.00, 200, 'мешок'),
-(2, 'Кирпич красный', 'Одинарный', 18.50, 5000, 'шт'),
-(2, 'Кирпич силикатный', 'Белый', 16.00, 3000, 'шт'),
-(3, 'Плитка керамическая', 'Настенная', 950.00, 120, 'м2');
+('Цемент М500', 'Высокопрочный цемент', 1200, 1500, 20, '50 кг', 1, 'ProductImages/cement.png'),
+('Кирпич красный', 'Керамический кирпич', 800, NULL, NULL, '250x120x65', 1, 'ProductImages/brick.png'),
+('Песок строительный', 'Речной песок', 600, NULL, NULL, 'Мешок 40 кг', 2, 'ProductImages/sand.png');
 
 /* =========================================
-   КОРЗИНА ПОЛЬЗОВАТЕЛЯ
+   КОРЗИНА
 ========================================= */
-
--- user1
-INSERT INTO cart_items (user_id, product_id, quantity)
+INSERT INTO Carts (UserID, CreatedAt)
 VALUES
-(3, 1, 5),
-(3, 3, 100);
-
--- user2
-INSERT INTO cart_items (user_id, product_id, quantity)
-VALUES
-(4, 2, 3),
-(4, 5, 10);
+(1, '2025-01-10');
 
 /* =========================================
-   ЗАКАЗ (пример оформленного заказа)
+   ТОВАРЫ В КОРЗИНЕ
 ========================================= */
-
-INSERT INTO orders (user_id, status)
-VALUES (3, 'paid');
-
-DECLARE @order_id INT = SCOPE_IDENTITY();
-
-INSERT INTO order_items (order_id, product_id, quantity, price)
+INSERT INTO CartItems (CartID, ProductID, Quantity, PriceAtMoment)
 VALUES
-(@order_id, 1, 5, 420.00),
-(@order_id, 3, 100, 18.50);
+(1, 1, 2, 1200),
+(1, 2, 5, 800);
+
+/* =========================================
+   ЗАКАЗ
+========================================= */
+INSERT INTO Orders 
+(OrderNumber, UserID, DeliveryAddress, TotalPrice, OrderDate, Status)
+VALUES
+('ORD-0001', 1, 'г. Москва, ул. Строителей, д.10', 6400, '2025-01-11', 'Создан');
+
+/* =========================================
+   ТОВАРЫ В ЗАКАЗЕ
+========================================= */
+INSERT INTO OrderItems (OrderID, ProductID, Quantity, PriceAtMoment)
+VALUES
+(1, 1, 2, 1200),
+(1, 2, 5, 800);

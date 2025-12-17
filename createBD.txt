@@ -1,102 +1,126 @@
 /* =========================================
    СОЗДАНИЕ БАЗЫ ДАННЫХ
 ========================================= */
-
-IF DB_ID(N'BuildingMaterialsStore') IS NOT NULL
-BEGIN
-    DROP DATABASE BuildingMaterialsStore;
-END;
+CREATE DATABASE OptStroySistem;
 GO
 
-CREATE DATABASE BuildingMaterialsStore;
-GO
-
-USE BuildingMaterialsStore;
+USE OptStroySistem;
 GO
 
 /* =========================================
-   ТАБЛИЦЫ РОЛЕЙ И ПОЛЬЗОВАТЕЛЕЙ
+   ТАБЛИЦА РОЛЕЙ
 ========================================= */
-
-CREATE TABLE roles (
-    role_id INT IDENTITY PRIMARY KEY,
-    role_name NVARCHAR(50) NOT NULL UNIQUE
-);
-
-CREATE TABLE users (
-    user_id INT IDENTITY PRIMARY KEY,
-    email NVARCHAR(255) NOT NULL UNIQUE,
-    password_hash NVARCHAR(255) NOT NULL,
-    role_id INT NOT NULL,
-    created_at DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
-    is_active BIT NOT NULL DEFAULT 1,
-    CONSTRAINT FK_users_roles
-        FOREIGN KEY (role_id) REFERENCES roles(role_id)
+CREATE TABLE Roles (
+    RoleID INT IDENTITY PRIMARY KEY,
+    RoleName NVARCHAR(50) NOT NULL UNIQUE
 );
 
 /* =========================================
-   КАТЕГОРИИ И ТОВАРЫ
+   ТАБЛИЦА ПОЛЬЗОВАТЕЛЕЙ
 ========================================= */
+CREATE TABLE Users (
+    UserID INT IDENTITY PRIMARY KEY,
+    FullName NVARCHAR(150) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE,
+    Phone NVARCHAR(20) NOT NULL UNIQUE,
+    PasswordHash NVARCHAR(256) NOT NULL,
+    RoleID INT NOT NULL,
+    CreatedAt NVARCHAR(50) NOT NULL,
+    IsActive INT NOT NULL DEFAULT 1,
 
-CREATE TABLE product_categories (
-    category_id INT IDENTITY PRIMARY KEY,
-    category_name NVARCHAR(100) NOT NULL UNIQUE
-);
-
-CREATE TABLE products (
-    product_id INT IDENTITY PRIMARY KEY,
-    category_id INT NOT NULL,
-    product_name NVARCHAR(255) NOT NULL,
-    description NVARCHAR(MAX),
-    price DECIMAL(10,2) NOT NULL CHECK (price >= 0),
-    quantity_in_stock DECIMAL(10,2) NOT NULL CHECK (quantity_in_stock >= 0),
-    unit NVARCHAR(20) NOT NULL,
-    is_active BIT NOT NULL DEFAULT 1,
-    CONSTRAINT FK_products_categories
-        FOREIGN KEY (category_id) REFERENCES product_categories(category_id)
+    CONSTRAINT FK_Users_Roles FOREIGN KEY (RoleID)
+        REFERENCES Roles(RoleID)
 );
 
 /* =========================================
-   КОРЗИНА (через cart_items)
+   ТАБЛИЦА ПОСТАВЩИКОВ
 ========================================= */
-
-CREATE TABLE cart_items (
-    user_id INT NOT NULL,
-    product_id INT NOT NULL,
-    quantity DECIMAL(10,2) NOT NULL CHECK (quantity > 0),
-    CONSTRAINT PK_cart_items
-        PRIMARY KEY (user_id, product_id),
-    CONSTRAINT FK_cart_items_users
-        FOREIGN KEY (user_id) REFERENCES users(user_id),
-    CONSTRAINT FK_cart_items_products
-        FOREIGN KEY (product_id) REFERENCES products(product_id)
+CREATE TABLE Suppliers (
+    SupplierID INT IDENTITY PRIMARY KEY,
+    Name NVARCHAR(150) NOT NULL,
+    ContactInfo NVARCHAR(255)
 );
 
 /* =========================================
-   ЗАКАЗЫ
+   ТАБЛИЦА ТОВАРОВ
 ========================================= */
+CREATE TABLE Products (
+    ProductID INT IDENTITY PRIMARY KEY,
+    Name NVARCHAR(150) NOT NULL,
+    Description NVARCHAR(500),
+    Price INT NOT NULL,
+    OldPrice INT,
+    DiscountPercent INT,
+    Characteristics NVARCHAR(500),
+    SupplierID INT NOT NULL,
+    ImagePath NVARCHAR(255),
+    IsActive INT NOT NULL DEFAULT 1,
 
-CREATE TABLE orders (
-    order_id INT IDENTITY PRIMARY KEY,
-    user_id INT NOT NULL,
-    order_date DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
-    status NVARCHAR(20) NOT NULL,
-    CONSTRAINT FK_orders_users
-        FOREIGN KEY (user_id) REFERENCES users(user_id),
-    CONSTRAINT CK_orders_status
-        CHECK (status IN ('new', 'paid', 'shipped', 'completed', 'cancelled'))
+    CONSTRAINT FK_Products_Suppliers FOREIGN KEY (SupplierID)
+        REFERENCES Suppliers(SupplierID)
 );
 
-CREATE TABLE order_items (
-    order_item_id INT IDENTITY PRIMARY KEY,
-    order_id INT NOT NULL,
-    product_id INT NOT NULL,
-    quantity DECIMAL(10,2) NOT NULL CHECK (quantity > 0),
-    price DECIMAL(10,2) NOT NULL CHECK (price >= 0),
-    CONSTRAINT FK_order_items_orders
-        FOREIGN KEY (order_id) REFERENCES orders(order_id),
-    CONSTRAINT FK_order_items_products
-        FOREIGN KEY (product_id) REFERENCES products(product_id),
-    CONSTRAINT UQ_order_product
-        UNIQUE (order_id, product_id)
+/* =========================================
+   ТАБЛИЦА КОРЗИН
+========================================= */
+CREATE TABLE Carts (
+    CartID INT IDENTITY PRIMARY KEY,
+    UserID INT NOT NULL,
+    CreatedAt NVARCHAR(50) NOT NULL,
+
+    CONSTRAINT FK_Carts_Users FOREIGN KEY (UserID)
+        REFERENCES Users(UserID)
+);
+
+/* =========================================
+   ТОВАРЫ В КОРЗИНЕ
+========================================= */
+CREATE TABLE CartItems (
+    CartItemID INT IDENTITY PRIMARY KEY,
+    CartID INT NOT NULL,
+    ProductID INT NOT NULL,
+    Quantity INT NOT NULL,
+    PriceAtMoment INT NOT NULL,
+
+    CONSTRAINT FK_CartItems_Carts FOREIGN KEY (CartID)
+        REFERENCES Carts(CartID)
+        ON DELETE CASCADE,
+
+    CONSTRAINT FK_CartItems_Products FOREIGN KEY (ProductID)
+        REFERENCES Products(ProductID)
+);
+
+/* =========================================
+   ТАБЛИЦА ЗАКАЗОВ
+========================================= */
+CREATE TABLE Orders (
+    OrderID INT IDENTITY PRIMARY KEY,
+    OrderNumber NVARCHAR(50) NOT NULL UNIQUE,
+    UserID INT NOT NULL,
+    DeliveryAddress NVARCHAR(255) NOT NULL,
+    TotalPrice INT NOT NULL,
+    OrderDate NVARCHAR(50) NOT NULL,
+    Status NVARCHAR(50) NOT NULL,
+
+    CONSTRAINT FK_Orders_Users FOREIGN KEY (UserID)
+        REFERENCES Users(UserID)
+);
+
+/* =========================================
+   ТОВАРЫ В ЗАКАЗЕ
+========================================= */
+CREATE TABLE OrderItems (
+    OrderItemID INT IDENTITY PRIMARY KEY,
+    OrderID INT NOT NULL,
+    ProductID INT NOT NULL,
+    Quantity INT NOT NULL,
+    PriceAtMoment INT NOT NULL,
+
+    CONSTRAINT FK_OrderItems_Orders FOREIGN KEY (OrderID)
+        REFERENCES Orders(OrderID)
+        ON DELETE CASCADE,
+
+    CONSTRAINT FK_OrderItems_Products FOREIGN KEY (ProductID)
+        REFERENCES Products(ProductID)
+        ON DELETE NO ACTION
 );

@@ -7,7 +7,19 @@
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\appdata\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\appdata\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\appdata\\appframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\appdata\\appframe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\appdata\\appconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\appdata\\appconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\practice2025one\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,8 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\AppData\\Model1.edmx",
+              "RelativeDocumentMoniker": "Practice2025One\\AppData\\Model1.edmx",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\AppData\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Practice2025One\\AppData\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-12-17T15:44:03.564Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppFrame.cs",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\AppData\\AppFrame.cs",
+              "RelativeDocumentMoniker": "Practice2025One\\AppData\\AppFrame.cs",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\AppData\\AppFrame.cs",
+              "RelativeToolTip": "Practice2025One\\AppData\\AppFrame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:04:19.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppConnect.cs",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\AppData\\AppConnect.cs",
+              "RelativeDocumentMoniker": "Practice2025One\\AppData\\AppConnect.cs",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\AppData\\AppConnect.cs",
+              "RelativeToolTip": "Practice2025One\\AppData\\AppConnect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:03:44.06Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -34,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Practice2025One\\MainWindow.xaml.cs",
@@ -42,8 +92,7 @@
               "RelativeToolTip": "Practice2025One\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T14:59:17.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T14:59:17.484Z"
             }
           ]
         }

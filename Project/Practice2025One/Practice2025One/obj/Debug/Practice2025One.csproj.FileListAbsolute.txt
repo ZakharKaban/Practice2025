@@ -1,0 +1,14 @@
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\bin\Debug\Practice2025One.exe
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\bin\Debug\Practice2025One.pdb
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One.csproj.AssemblyReference.cache
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\MainWindow.g.cs
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\App.g.cs
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One_MarkupCompile.cache
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One_MarkupCompile.lref
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\MainWindow.baml
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One.g.resources
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One.Properties.Resources.resources
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One.csproj.GenerateResource.cache
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One.csproj.CoreCompileInputs.cache
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One.exe
+D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\Practice2025One.pdb
