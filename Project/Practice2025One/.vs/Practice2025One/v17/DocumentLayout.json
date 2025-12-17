@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\practice2025one\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|d:\\projects\\bloomforall\\practice2025\\project\\practice2025one\\practice2025one\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,24 +31,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "Practice2025One\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml.cs",
+              "RelativeToolTip": "Practice2025One\\Pages\\LoginPage.xaml.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwDUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T19:59:43.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Practice2025One\\Pages\\LoginPage.xaml",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "Practice2025One\\Pages\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-17T19:59:39.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Practice2025One\\MainWindow.xaml",
               "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\MainWindow.xaml",
               "RelativeToolTip": "Practice2025One\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-17T17:40:39.021Z",
+              "WhenOpened": "2025-12-17T19:46:05.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Practice2025One\\MainWindow.xaml.cs",
               "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\Practice2025One\\Practice2025One\\MainWindow.xaml.cs",
               "RelativeToolTip": "Practice2025One\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA3wBMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T16:44:54.476Z",
               "EditorCaption": ""

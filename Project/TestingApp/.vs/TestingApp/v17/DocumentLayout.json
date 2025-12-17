@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\TestingApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFACAF2-D72F-4FAA-88EB-502DDD719DDB}|TestingApp\\TestingApp.csproj|D:\\Projects\\BloomForAll\\Practice2025\\Project\\TestingApp\\testingapp\\passwordchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFACAF2-D72F-4FAA-88EB-502DDD719DDB}|TestingApp\\TestingApp.csproj|solutionrelative:testingapp\\passwordchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8514A6AC-4DD1-4892-906E-12BE770F40AE}|Testomat\\Testomat.csproj|d:\\projects\\bloomforall\\practice2025\\project\\testingapp\\testomat\\passwordcheckertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8514A6AC-4DD1-4892-906E-12BE770F40AE}|Testomat\\Testomat.csproj|solutionrelative:testomat\\passwordcheckertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PasswordCheckerTests.cs",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\TestingApp\\Testomat\\PasswordCheckerTests.cs",
+              "RelativeDocumentMoniker": "Testomat\\PasswordCheckerTests.cs",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\TestingApp\\Testomat\\PasswordCheckerTests.cs",
+              "RelativeToolTip": "Testomat\\PasswordCheckerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:01:50.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PasswordChecker.cs",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\TestingApp\\TestingApp\\PasswordChecker.cs",
+              "RelativeDocumentMoniker": "TestingApp\\PasswordChecker.cs",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\TestingApp\\TestingApp\\PasswordChecker.cs",
+              "RelativeToolTip": "TestingApp\\PasswordChecker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T19:56:06.12Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
