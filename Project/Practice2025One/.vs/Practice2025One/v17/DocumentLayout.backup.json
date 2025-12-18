@@ -3,39 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\class\\validators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\class\\validators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\pages\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\pages\\orderhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\class\\validators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\class\\validators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\orderhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\orderhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\pages\\orderdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\orderdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\orderdetailspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\pages\\orderhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\orderhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\orderhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\appdata\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\appdata\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\appdata\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|c:\\users\\10220468\\documents\\github\\practice2025\\project\\practice2025one\\practice2025one\\pages\\orderdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\practice2025one\\pages\\orderdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{263D3049-AF19-4141-AFCC-B56FD1A207BA}|Practice2025One\\Practice2025One.csproj|solutionrelative:practice2025one\\pages\\orderdetailspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,37 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProfilePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\ProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "Practice2025One\\Pages\\ProfilePage.xaml.cs",
-              "ToolTip": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\ProfilePage.xaml.cs",
-              "RelativeToolTip": "Practice2025One\\Pages\\ProfilePage.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwEAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T08:35:48.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Validators.cs",
-              "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Class\\Validators.cs",
-              "RelativeDocumentMoniker": "Practice2025One\\Class\\Validators.cs",
-              "ToolTip": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Class\\Validators.cs",
-              "RelativeToolTip": "Practice2025One\\Class\\Validators.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAADwv/0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T08:30:27.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RegisterPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "Practice2025One\\Pages\\RegisterPage.xaml.cs",
@@ -110,6 +84,31 @@
               "ViewState": "AgIAAEoAAAAAAAAAAAAIwF0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T07:06:58.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "Practice2025One\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "Practice2025One\\Pages\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-17T19:59:39.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Validators.cs",
+              "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Class\\Validators.cs",
+              "RelativeDocumentMoniker": "Practice2025One\\Class\\Validators.cs",
+              "ToolTip": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Class\\Validators.cs",
+              "RelativeToolTip": "Practice2025One\\Class\\Validators.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAswP0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T08:30:27.231Z",
               "EditorCaption": ""
             },
             {
@@ -138,6 +137,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfilePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\ProfilePage.xaml.cs",
+              "RelativeDocumentMoniker": "Practice2025One\\Pages\\ProfilePage.xaml.cs",
+              "ToolTip": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\ProfilePage.xaml.cs",
+              "RelativeToolTip": "Practice2025One\\Pages\\ProfilePage.xaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T08:35:48.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Model1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\AppData\\Model1.Designer.cs",
@@ -151,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LoginPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "Practice2025One\\Pages\\LoginPage.xaml.cs",
@@ -160,18 +172,6 @@
               "ViewState": "AgIAABgAAAAAAAAAAAAowDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T19:59:43.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginPage.xaml",
-              "DocumentMoniker": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml",
-              "RelativeDocumentMoniker": "Practice2025One\\Pages\\LoginPage.xaml",
-              "ToolTip": "C:\\Users\\10220468\\Documents\\GitHub\\Practice2025\\Project\\Practice2025One\\Practice2025One\\Pages\\LoginPage.xaml",
-              "RelativeToolTip": "Practice2025One\\Pages\\LoginPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-17T19:59:39.542Z",
               "EditorCaption": ""
             },
             {
