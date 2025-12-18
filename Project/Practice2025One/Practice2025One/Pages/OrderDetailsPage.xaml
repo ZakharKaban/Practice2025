@@ -46,7 +46,8 @@
                 <ListView x:Name="OrderItemsListView">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Название" Width="*" DisplayMemberBinding="{Binding ProductName}"/>
+                            <GridViewColumn Header="Название" Width="{Binding ActualWidth, 
+    RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListView}}}" DisplayMemberBinding="{Binding ProductName}"/>
                             <GridViewColumn Header="Количество" Width="100">
                                 <GridViewColumn.CellTemplate>
                                     <DataTemplate>

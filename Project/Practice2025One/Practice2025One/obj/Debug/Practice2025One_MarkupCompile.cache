@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\
+C:\Users\10220468\Documents\GitHub\Practice2025\Project\Practice2025One\Practice2025One\obj\Debug\
 Practice2025One
 none
 false
 DEBUG;TRACE
-D:\Projects\BloomForAll\Practice2025\Project\Practice2025One\Practice2025One\App.xaml
+C:\Users\10220468\Documents\GitHub\Practice2025\Project\Practice2025One\Practice2025One\App.xaml
 17-1311052305
 
 281568069510
-18-1930355205
+18-1601662097
 MainWindow.xaml;Pages\CatalogPage.xaml;Pages\CartPage.xaml;Pages\LoginPage.xaml;Pages\OrderDetailsPage.xaml;Pages\OrderHistoryPage.xaml;Pages\OrderPage.xaml;Pages\OrdersManagementPage.xaml;Pages\ProductsManagementPage.xaml;Pages\ProfilePage.xaml;Pages\RegisterPage.xaml;Pages\SuppliersManagementPage.xaml;Pages\UsersManagementPage.xaml;Windows\ChangeRoleWindow.xaml;Windows\ProductEditWindow.xaml;Windows\SupplierEditWindow.xaml;Windows\UserEditWindow.xaml;
 
 False

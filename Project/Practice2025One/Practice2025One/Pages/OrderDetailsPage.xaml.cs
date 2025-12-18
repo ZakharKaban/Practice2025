@@ -41,7 +41,7 @@ namespace Practice2025One.Pages
                 StatusTextBlock.Text = order.Status;
                 TotalPriceTextBlock.Text = $"{order.TotalPrice} руб.";
                 
-                var orderItems = AppConnect.Model1.OrderItems
+              var orderItems = AppConnect.Model1.OrderItems
                     .Where(oi => oi.OrdersReference.EntityKey != null && 
                                 (int)oi.OrdersReference.EntityKey.EntityKeyValues[0].Value == orderId)
                     .ToList()
