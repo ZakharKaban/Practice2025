@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ef2bd31de39a4c5fa421bac3bfb90df6" Name="Diagram1">
+        <EntityTypeShape EntityType="OptStroySistemModel.CartItems" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Carts" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Categories" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.OrderItems" Width="1.5" PointX="8.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Orders" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.ProductReviews" Width="1.5" PointX="10.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Products" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Roles" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Stock" Width="1.5" PointX="5.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Suppliers" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Users" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OptStroySistemModel.Wishlist" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="OptStroySistemModel.FK_CartItems_Carts" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_CartItems_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Carts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Categories_ParentCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_OrderItems_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_OrderItems_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_ProductReviews_OrderItems" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Orders_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_ProductReviews_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_ProductReviews_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Products_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Stock_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Wishlist_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="OptStroySistemModel.FK_Wishlist_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
