@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using System.Data.Entity;
+using Microsoft.Win32;
 
 
 namespace DemoEx.Pages
@@ -25,20 +26,37 @@ namespace DemoEx.Pages
     public partial class PageEdit : Page
     {
         public int Id;
+        public PageEdit() { }
         public PageEdit(int Idshnk, string NameSup)
         {
             InitializeComponent();
             TextBlokSupName.Text = NameSup;
-            Id = Idshnk;
+           int Id = Idshnk;
         }
 
         private void buttonIban_Click(object sender, RoutedEventArgs e)
         {
             var baba = AppConect.Model1.Products.FirstOrDefault(x => x.ProductID == Id);
-            baba.SupplierID = 1;
-
-            AppConect.Model1.Products.Add(2,"Niga","","",300, 0,);
+            //baba.SupplierID = 1;
             AppConect.Model1.SaveChanges();
+
+            try {
+                var OpenFileDialog = new Microsoft.Win32.OpenFileDialog();
+                OpenFileDialog.Filter = "ImageFile(*.png; *.jpeg) | *.png; *.jpeg";
+                OpenFileDialog.Multiselect = false;
+
+                OpenFileDialog.ShowDialog();
+                if(OpenFileDialog.FileName == null) { }
+                else
+                {
+                    string oldPapa = OpenFileDialog.FileName;
+                    string fileName = System.IO.Path.GetFileName(oldPapa);
+                    string relativePath = @"..\..\Sourses\" + fileName;//Это будет ссылка на картинку
+                    System.IO.File.Copy(oldPapa, relativePath, true);
+                }
+            }
+            catch(Exception ex) { MessageBox.Show($"Ошибка: {ex.Message}"); }
+           
 
         }
     }

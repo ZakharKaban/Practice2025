@@ -1,12 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\DemoEx\\Project\\DemoEx\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|d:\\projects\\bloomforall\\practice2025\\project\\demoex\\demoex\\pages\\pageedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|solutionrelative:demoex\\pages\\pageedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|d:\\projects\\bloomforall\\practice2025\\project\\demoex\\demoex\\pages\\pagecatalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|solutionrelative:demoex\\pages\\pagecatalog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|d:\\projects\\bloomforall\\practice2025\\project\\demoex\\demoex\\pages\\pagecatalog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|solutionrelative:demoex\\pages\\pagecatalog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|d:\\projects\\bloomforall\\practice2025\\project\\demoex\\demoex\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3750DFFE-6632-4E0B-B1DC-3C4064B15C04}|DemoEx\\DemoEx.csproj|solutionrelative:demoex\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "DemoEx\\MainWindow.xaml",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\MainWindow.xaml",
+              "RelativeToolTip": "DemoEx\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-22T17:08:28.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PageEdit.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\Pages\\PageEdit.xaml.cs",
+              "RelativeDocumentMoniker": "DemoEx\\Pages\\PageEdit.xaml.cs",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\Pages\\PageEdit.xaml.cs",
+              "RelativeToolTip": "DemoEx\\Pages\\PageEdit.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwC0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T16:38:13.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PageCatalog.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\Pages\\PageCatalog.xaml.cs",
+              "RelativeDocumentMoniker": "DemoEx\\Pages\\PageCatalog.xaml.cs",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\Pages\\PageCatalog.xaml.cs",
+              "RelativeToolTip": "DemoEx\\Pages\\PageCatalog.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T16:33:57.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageCatalog.xaml",
+              "DocumentMoniker": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\Pages\\PageCatalog.xaml",
+              "RelativeDocumentMoniker": "DemoEx\\Pages\\PageCatalog.xaml",
+              "ToolTip": "D:\\Projects\\BloomForAll\\Practice2025\\Project\\DemoEx\\DemoEx\\Pages\\PageCatalog.xaml",
+              "RelativeToolTip": "DemoEx\\Pages\\PageCatalog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-22T16:33:50.524Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

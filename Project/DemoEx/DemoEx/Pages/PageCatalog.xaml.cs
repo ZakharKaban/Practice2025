@@ -39,6 +39,13 @@ namespace DemoEx.Pages
         private void listViewMain_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+            if (listViewMain.SelectedItem is Products ChosenProd)
+            {
+                PageEdit ToPage = new PageEdit(ChosenProd.ProductID, ChosenProd.Name);
+              
+               NavigationService.Navigate(ToPage);
+
+            }
         }
 
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
